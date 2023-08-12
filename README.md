@@ -4,7 +4,7 @@
 
 The Adaptive Cruise Control (ACC) System developed in MATLAB and Simulink utilizes Model Predictive Control (MPC) to enable longitudinal speed control for the follower vehicle over a range of speed profiles. The ACC system aims to maintain a safe distance from the leader vehicle while optimizing the gas pedal actuation sequence for a comfortable ride with minimal overshoot.
 
-![Simulink Model of ACC System](Simulink_Model_of_Adaptive_Cruise_Control_System.png)
+![Simulink Model of ACC System](images/Simulink_Model_of_Adaptive_Cruise_Control_System.png)
 *Fig.3 Simulink Model of Adaptive Cruise Control System*
 
 ## Model Design
@@ -38,7 +38,7 @@ The following steps provide an overview of how the complete ACC model was design
 
 The ACC system includes different driving modes to ensure safe and smooth driving based on the relative distance between the leader and follower vehicle.
 
-![Stateflow sequence viewer](Stateflow_sequence_viewer.png)
+![Stateflow sequence viewer](images/Stateflow_sequence_viewer.png)
 *Fig.5 Stateflow sequence viewer*
 
 - **Free Mode:** This mode is activated when the distance between vehicles is greater than a threshold value. The follower vehicle drives freely with a linear time-invariant vehicle model as the leader vehicle. A switch function block toggles between free mode and ACC mode.
@@ -57,21 +57,21 @@ The following graphs illustrate the behavior of the ACC system in different scen
 
 1. **Relative Distance and Velocity Graph:**
 
-![Relative distance and velocity graph](Relative_distance_and_velocity_graph.png)
+![Relative distance and velocity graph](images/Relative_distance_and_velocity_graph.png)
 *Fig.4 Relative distance and velocity graph*
 
 This graph provides an understanding of the inter-vehicular distance and velocity over time.
 
 2. **Free Driving Mode Scenario:**
 
-![Free driving mode scenario](Free_driving_mode_scenario.png)
+![Free driving mode scenario](images/Free_driving_mode_scenario.png)
 *Fig.6 Free driving mode Scenario*
 
 This scenario depicts the free driving mode when the relative vehicle distance is 20 m. In this mode, the follower vehicle's velocity gradually increases as it approaches the rear of the leader vehicle.
 
 3. **Adaptive Cruise Mode Scenario:**
 
-![Adaptive cruise mode scenario](Adaptive_cruise_mode_scenario.png)
+![Adaptive cruise mode scenario](images/Adaptive_cruise_mode_scenario.png)
 *Fig.7 Adaptive cruise mode Scenario*
 
 This scenario shows the Adaptive Cruise Control mode, which activates when the relative vehicle distance falls below 10 m. The follower vehicle maintains a safe distance from the leader vehicle with an optimum speed profile determined by the MPC control module.
