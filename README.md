@@ -64,14 +64,14 @@ This graph provides an understanding of the inter-vehicular distance and velocit
 
 2. **Free Driving Mode Scenario:**
 
-![Free driving mode scenario](images/Free_driving_mode_scenario.png)
+![Free driving mode scenario](images/Free_Driving_Mode_scenario.png)
 *Fig.6 Free driving mode Scenario*
 
 This scenario depicts the free driving mode when the relative vehicle distance is 20 m. In this mode, the follower vehicle's velocity gradually increases as it approaches the rear of the leader vehicle.
 
 3. **Adaptive Cruise Mode Scenario:**
 
-![Adaptive cruise mode scenario](images/Adaptive_cruise_mode_scenario.png)
+![Adaptive cruise mode scenario](images/Adaptive_cruise_mode_Scenario.png)
 *Fig.7 Adaptive cruise mode Scenario*
 
 This scenario shows the Adaptive Cruise Control mode, which activates when the relative vehicle distance falls below 10 m. The follower vehicle maintains a safe distance from the leader vehicle with an optimum speed profile determined by the MPC control module.
